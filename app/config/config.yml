@@ -1,0 +1,14 @@
+imports:
+    - { resource: parameters.dist.yml }
+    - { resource: parameters.yml }
+
+framework:
+    secret: %secret%
+    router: { resource: "%kernel.root_dir%/config/routing.yml" }
+    templating: { engines: [twig] }
+
+swiftmailer:
+    transport:  gmail
+    host:       smtp.gmail.com
+    username:   unoegohhtest
+    password:   Unoegohh123

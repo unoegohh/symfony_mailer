@@ -1,0 +1,4 @@
+unoegohh_mailer:
+    resource: "@UnoegohhMailerBundle/Resources/config/routing.yml"
+    prefix:   /
+

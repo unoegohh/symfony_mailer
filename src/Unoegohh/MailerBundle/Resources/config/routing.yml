@@ -1,0 +1,3 @@
+unoegohh_mailer_homepage:
+    pattern:  /
+    defaults: { _controller: UnoegohhMailerBundle:Default:index }
