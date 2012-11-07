@@ -12,3 +12,4 @@ swiftmailer:
     host:       smtp.gmail.com
     username:   unoegohhtest
     password:   Unoegohh123
+    port:       465
