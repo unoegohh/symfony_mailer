@@ -15,7 +15,7 @@ class DefaultController extends Controller
             ->addTo("yuri.karmakov@pegast.ru");
 
         $this->get('mailer')->send($message);
-
-        return $this->render('UnoegohhMailerBundle:Default:index.html.twig');
+        $space= '<img src="http://cdn01.pegast.su/get/f8/bb/fd/528a7087c446ed744d7ac20eca79ba215eb8a1297fb957eac7a792f9d4/10x10.gif" alt="" width="5px" height="5px">';
+        return $this->render('UnoegohhMailerBundle:Default:index.html.twig', array('space'=> $space));
     }
 }
