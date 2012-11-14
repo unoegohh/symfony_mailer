@@ -17,6 +17,6 @@ class DefaultController extends Controller
 
         $this->get('mailer')->send($message);
         $space= '<img src="http://cdn01.pegast.su/get/f8/bb/fd/528a7087c446ed744d7ac20eca79ba215eb8a1297fb957eac7a792f9d4/10x10.gif" alt="" width="5px" height="5px">';
-        return $this->render('UnoegohhMailerBundle:Default:index.html.twig', array('space'=> $space));
+        return $this->render('UnoegohhMailerBundle:Default:index2.html.twig', array('space'=> $space));
     }
 }
