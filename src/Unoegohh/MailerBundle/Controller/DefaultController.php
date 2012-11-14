@@ -8,15 +8,17 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
+        $template = 'UnoegohhMailerBundle:Default:index2.html.twig';
+
         $message = $this->get('mailer')->createMessage()
             ->setSubject("form mailer")
             ->setFrom(array("pegas@tets.ru" => "pegast"))
-            ->setBody($this->renderView('UnoegohhMailerBundle:Default:index.html.twig'), 'text/html')
+            ->setBody($this->renderView($template), 'text/html')
             ->addTo("yuri.karmakov@pegast.ru")
             ->addTo("unoegohhtest@gmail.com");
 
         $this->get('mailer')->send($message);
         $space= '<img src="http://cdn01.pegast.su/get/f8/bb/fd/528a7087c446ed744d7ac20eca79ba215eb8a1297fb957eac7a792f9d4/10x10.gif" alt="" width="5px" height="5px">';
-        return $this->render('UnoegohhMailerBundle:Default:index2.html.twig', array('space'=> $space));
+        return $this->render($template, array('space'=> $space));
     }
 }
